@@ -1,8 +1,5 @@
 package nelson.neural.net.function;
 
-/**
- * Created by Nelson on 10-Nov-18.
- */
 public class ActivationFunctionFactory {
 
     public static final double DEFAULT_COEFFICIENT = 1.0;

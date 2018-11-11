@@ -28,9 +28,7 @@ public class RandomNumberGenerator {
     public static double GenerateNext(){
         if(r==null)
             r = new Random(seed);
-        final double v = r.nextDouble();
-        System.err.println(v);
-        return v;
+        return r.nextDouble();
     }
     
     /** 

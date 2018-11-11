@@ -1,8 +1,5 @@
 package nelson.neural.net.function;
 
-/**
- * Created by Nelson on 10-Nov-18.
- */
 class Sigmoid implements ActivationFunction {
     private final double coefficient;
 

@@ -5,9 +5,6 @@ import nelson.neural.net.function.ActivationFunction;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Nelson on 10-Nov-18.
- */
 public class NeuralNetBuilder {
 
     public static NeuralNetBuilder net(final int numberOfInputs) {

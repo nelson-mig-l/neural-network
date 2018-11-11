@@ -28,40 +28,25 @@ public class NeuralNetConsoleTest {
         Linear outputAcFnc = new Linear(1.0);
         NeuralNet nn = new NeuralNet(numberOfInputs,numberOfOutputs,
                 numberOfHiddenNeurons,hiddenAcFnc,outputAcFnc);
-        
+        nn.print();
+
         double [] neuralInput = { 1.5 , 0.5 };
-        
+
         double [] neuralOutput;
         nn.setInputs(neuralInput);
         nn.calc();
         neuralOutput=nn.getOutputs();
         System.out.println(Arrays.toString(neuralOutput));
-        
-        neuralInput[0] = 1.0;
-        neuralInput[1] = 2.1;
-        
-        nn.setInputs(neuralInput);
-        nn.calc();
-        neuralOutput=nn.getOutputs();
 
-
-        nn.print();
-        System.out.println(Arrays.toString(neuralOutput));
-
-        System.out.println("Feeding the values ["+String.
-                        valueOf(neuralInput[0])+" ; "+
-                        String.valueOf(neuralInput[1])+"] to the neural network");
-                nn.setInputs(neuralInput);
-        nn.calc();
-        neuralOutput=nn.getOutputs();
-        System.out.println(Arrays.toString(neuralOutput));
         neuralInput[0] = 1.0;
         neuralInput[1] = 2.1;
 
         nn.setInputs(neuralInput);
         nn.calc();
         neuralOutput=nn.getOutputs();
+
+
         System.out.println(Arrays.toString(neuralOutput));
-        
+
     }
 }
